@@ -91,3 +91,4 @@ C:\krutarth\EmpAPI\EmpAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
 C:\krutarth\EmpAPI\EmpAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
 C:\krutarth\EmpAPI\EmpAPI\bin\Debug\net6.0\libman.json
 C:\krutarth\EmpAPI\EmpAPI\bin\Debug\net6.0\EmpAPI.staticwebassets.runtime.json
+C:\krutarth\EmpAPI\EmpAPI\bin\Debug\net6.0\appsettings.Production.json

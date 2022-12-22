@@ -1,4 +1,5 @@
 ﻿using EmpAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,13 +17,13 @@ namespace EmployeeAPI.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet , Authorize]
         public async Task<ActionResult<List<Employee>>> Get()
         {
             return Ok(await _context.Employees.ToListAsync());
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}"), Authorize]
         public async Task<ActionResult<Employee>> Get(int id)
         {
             var Employee = await _context.Employees.FindAsync(id);
@@ -32,13 +33,13 @@ namespace EmployeeAPI.Controllers
         }
 
         [Route("GetAllDepartmentNames")]
-        [HttpGet]
+        [HttpGet, Authorize]
         public async Task<ActionResult<List<Department>>> GetAllDepartments()
         {
             return Ok(await _context.Departments.ToListAsync());
         }
 
-        [HttpPost]
+        [HttpPost, Authorize]
         public async Task<ActionResult<List<Employee>>> AddEmployee(Employee Employee)
         {
             _context.Employees.Add(Employee);
@@ -47,7 +48,7 @@ namespace EmployeeAPI.Controllers
             return Ok(await _context.Employees.ToListAsync());
         }
 
-        [HttpPut]
+        [HttpPut, Authorize]
         public async Task<ActionResult<List<Employee>>> UpdateEmployee(Employee request)
         {
             var dbEmployee = await _context.Employees.FindAsync(request.EmployeeId);
@@ -68,7 +69,7 @@ namespace EmployeeAPI.Controllers
             return Ok(await _context.Employees.ToListAsync());
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}"), Authorize]
         public async Task<ActionResult<List<Employee>>> Delete(int id)
         {
             var dbEmployee = await _context.Employees.FindAsync(id);

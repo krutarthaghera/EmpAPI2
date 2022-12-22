@@ -1,4 +1,5 @@
 ﻿using EmpAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,13 +16,13 @@ namespace EmployeeAPI.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet, Authorize]
         public async Task<ActionResult<List<Department>>> Get()
         {
             return Ok(await _context.Departments.ToListAsync());
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}"), Authorize]
         public async Task<ActionResult<Department>> Get(int id)
         {
             var Department = await _context.Departments.FindAsync(id);
@@ -30,7 +31,7 @@ namespace EmployeeAPI.Controllers
             return Ok(Department);
         }
 
-        [HttpPost]
+        [HttpPost, Authorize]
         public async Task<ActionResult<List<Department>>> AddDepartment(Department Department)
         {
             _context.Departments.Add(Department);
@@ -39,7 +40,7 @@ namespace EmployeeAPI.Controllers
             return Ok(await _context.Departments.ToListAsync());
         }
 
-        [HttpPut]
+        [HttpPut, Authorize]
         public async Task<ActionResult<List<Department>>> UpdateDepartment(Department request)
         {
             var dbDepartment = await _context.Departments.FindAsync(request.DepartmentId);
@@ -53,7 +54,7 @@ namespace EmployeeAPI.Controllers
             return Ok(await _context.Departments.ToListAsync());
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}"), Authorize]
         public async Task<ActionResult<List<Employee>>> Delete(int id)
         {
             try

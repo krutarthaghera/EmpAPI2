@@ -91,3 +91,4 @@ C:\krutarth\EmpAPI\EmpAPI\obj\Release\net6.0\refint\EmpAPI.dll
 C:\krutarth\EmpAPI\EmpAPI\obj\Release\net6.0\EmpAPI.pdb
 C:\krutarth\EmpAPI\EmpAPI\obj\Release\net6.0\EmpAPI.genruntimeconfig.cache
 C:\krutarth\EmpAPI\EmpAPI\obj\Release\net6.0\ref\EmpAPI.dll
+C:\krutarth\EmpAPI\EmpAPI\bin\Release\net6.0\appsettings.Production.json
