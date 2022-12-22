@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "8kJaOfAV0xshzqcALXCG08IIeMtzWHWyMRKpGxSYeiQ=",
+  "Source": "EmpAPI",
+  "BasePath": "_content/EmpAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EmpAPI\\wwwroot",
+      "Source": "EmpAPI",
+      "ContentRoot": "C:\\krutarth\\EmpAPI\\EmpAPI\\wwwroot\\",
+      "BasePath": "_content/EmpAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\krutarth\\EmpAPI\\EmpAPI\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "EmpAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\krutarth\\EmpAPI\\EmpAPI\\wwwroot\\",
+      "BasePath": "_content/EmpAPI",
+      "RelativePath": "js/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "C:\\krutarth\\EmpAPI\\EmpAPI\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "EmpAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\krutarth\\EmpAPI\\EmpAPI\\wwwroot\\",
+      "BasePath": "_content/EmpAPI",
+      "RelativePath": "js/signalr/dist/browser/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js"
+    }
+  ]
+}
